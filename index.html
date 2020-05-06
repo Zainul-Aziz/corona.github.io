@@ -184,7 +184,7 @@
     </div>
   </div>
 <div class="container scrolltop float-right pr-5">
-  <i class="fa fa-arrow-up" onclick="topFunction()" id="mybtn"></i>
+  <a class="fa fa-arrow-up" href="#" id="mybtn"></a>
 </div>
 
 
@@ -212,11 +212,7 @@
       mybutton.style.display = "none";
     }
   }
-  function topFunction()
-  {
-    document.documentElement.scrollTop = 0;
-  }
-
+  
   function func()
   {
     $.get("https://api.covid19api.com/summary",
