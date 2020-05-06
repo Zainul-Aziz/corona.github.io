@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <title>covid_tracker</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@300&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+<body onload="func()">
+  <nav class="navbar navbar-expand-lg nav_style p-3">
+    <a class="navbar-brand ml-3" href="#" >COVID-19</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon fa fa-align-justify" style="font-size: 25px;color:whitesmoke"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto mr-5" >
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutid">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#symptom">Symptoms</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#prevention">Prevention</a>
+                </li>
+              </ul>
+              
+            </div>
+  </nav>
+
+  <div class= "image m-auto">
+    <h1 class="mt-5 text-center">Let's Fight Together Against Co <span><img class="rotate_image img-fluid" src="images/corona.jfif"></span> na Virus</h1>
+    <h2 class="text-center mb-3">Stay Home. Stay Safe.</h2>
+    
+  </div>
+  <section class="corona_update container-fluid">
+              <div class="mb-3">
+                  <h3 class="text-center text-uppercase">Covid-19 update</h3>
+                  <hr style="margin: auto; width: 20%;" class="bg-dark mt-3">
+              </div>
+              <div class="table-responsive mt-4">
+                <table class=" table table-bordered text-center" style="color: black;" id="tabval">
+                  <tr>
+                    <th>Country</th>
+                    <th>Confirmed Cases</th>
+                    <th>Recovered Cases</th>
+                    <th>Deaths</th>
+                    <th>Total Deaths</th>
+                    <th>New Recovered</th>
+                    <th>New Deaths</th>
+                  </tr>
+                </table>
+              </div>
+              
+  </section>
+
+  <div class="container-fluid sub-section pt-5 pb-5" id="aboutid">
+    <div class="section _header text-center mb-5 mt-4">
+      <h1>About COVID-19</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-5 col-md-6 col-12 about_set">
+        <img id="corona_about" src="images/corona_image.jfif" class="img-fluid">
+      </div>
+      <div class="col-lg-6 col-md-6 col-12">
+                      <h2> What is Covid-19 (Coronavirus) </h2>
+                      <p>Covid-19 is the infectious disease caused by the most 
+                          recently discovered coronavirus.This new virus and disease 
+                          were known before the outbreak began in Wuhan,China, in 
+                          December 2019
+                      </p>
+                      <p>Coronavirus are a large family of viruses which may cause illness in animals or humans.
+                          In humans,several coronavirus are known to cause respiratory infections ranging from the common cold to more severe 
+                          diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Sysndrome (SARS).The most recently
+                           discovered coronavirus causes Coronavirus disease Covid-19.</p>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <div class="container-fluid pt-5 pb-5" id="symptom">
+    <div class="section_header text-center mb-4 mt-4">
+      <h1>Coronavirus Symptoms</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-12 mt-3">
+        <figure class="text-center">
+          <img src="images/cough.jfif" class="img-fluid" width="120px" height="120px" >
+          <figcaption class="mt-3">Cough</figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12  mt-3">
+        <figure class="text-center">
+          <img src="images/running_nose.jfif" width="120px" height="150px">
+          <figcaption class="mt-3">Running Nose</figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 mt-3">
+        <figure class="text-center">
+          <img src="images/fever.png" width="120px" height="160px">
+          <figcaption class="mt-3">Fever</figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 mt-4">
+        <figure class="text-center">
+          <img src="images/throat.jfif" width="120px" height="120px">
+          <figcaption class="mt-3">Sore Throat</figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 mt-3">
+        <figure class="text-center">
+          <img src="images/tiredness.jfif" width="120px" height="120px">
+          <figcaption class="mt-3">Tiredness</figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 mt-3">
+        <figure class="text-center">
+          <img src="images/breathless.jfif" width="120px" height="120px">
+          <figcaption class="mt-3">Breathlessness(severe cases)</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid sub-section pt-5 pb-5 mb-3">
+    <div class="section_header text-center mb-4 mt-4">
+      <h1>Steps For Prevention Of Coronavirus</h1>
+    </div>
+    <div class="container-fluid" id="prevention">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12 mt-5">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+              <figure>
+                <img src="images/handwash.jfif" class="img-fluid" height="180px" width="100px">
+              </figure>
+            </div>
+            <div class="col-lg-8 col-md-8 col-12">
+              <p>Wash your hands regularly with soap and water for atleast 20 seconds to remove germs.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12 mt-5">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+              <figure>
+                <img src="images/mask.jfif" class="img-fluid" height="180px" width="150px">
+              </figure>
+            </div>
+            <div class="col-lg-8 col-md-8 col-12">
+              <p>Cover your nose and mouth with a disposable tissue or elbow while sneezing.Make use of disposable mask.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12 mt-5">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+              <figure>
+                <img src="images/social.jfif" class="img-fluid" height="180px" width="100px">
+              </figure>
+            </div>
+            <div class="col-lg-8 col-md-8 col-12 ">
+              <p>Avoid close contact with people who are sick. Maintain social distancing in public places.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<div class="container scrolltop float-right pr-5">
+  <i class="fa fa-arrow-up" onclick="topFunction()" id="mybtn"></i>
+</div>
+
+
+
+<!--        footer part               --> 
+<footer id="footer_style">
+<div class="container-fluid mt-3 text-center">
+  <p >Fz 2020</p>
+</div>
+</footer>
+
+
+
+<script type="text/javascript">
+  mybutton = document.getElementById("mybtn");
+  window.onscroll = function() { scrollFunction()};
+  function scrollFunction()
+  {
+    if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
+    {
+      mybutton.style.display = "block";
+    }
+    else
+    {
+      mybutton.style.display = "none";
+    }
+  }
+  function topFunction()
+  {
+    document.documentElement.scrollTop = 0;
+  }
+
+  function func()
+  {
+    $.get("https://api.covid19api.com/summary",
+
+      function (data)
+      {
+       //console.log(data['Countries'].length);
+       var tabval = document.getElementById('tabval');
+
+       for(var i=1; i<(data['Countries'].length) ;i++)
+       {
+         var x = tabval.insertRow();
+         x.insertCell(0); 
+
+         tabval.rows[i].cells[0].innerHTML = data['Countries'][i-1]['Country'];
+         tabval.rows[i].cells[0].style.background = "#918ce4";
+        
+
+         x.insertCell(1);
+         tabval.rows[i].cells[1].innerHTML = data['Countries'][i-1]['TotalConfirmed'];
+         tabval.rows[i].cells[1].style.background = "#7a4a91";
+         
+
+         x.insertCell(2);
+         tabval.rows[i].cells[2].innerHTML = data['Countries'][i-1]['TotalRecovered'];
+         tabval.rows[i].cells[2].style.background = "#7a4a91";
+         
+
+         x.insertCell(3);
+         tabval.rows[i].cells[3].innerHTML = data['Countries'][i-1]['TotalDeaths'];
+         tabval.rows[i].cells[3].style.background = "#7a4a91";
+         
+
+         x.insertCell(4);
+         tabval.rows[i].cells[4].innerHTML = data['Countries'][i-1]['NewConfirmed'];
+         tabval.rows[i].cells[4].style.background = "#7a4a91";
+     
+
+         x.insertCell(5);
+         tabval.rows[i].cells[5].innerHTML = data['Countries'][i-1]['NewRecovered'];
+         tabval.rows[i].cells[5].style.background = "#7a4a91";
+        
+
+         x.insertCell(6);
+         tabval.rows[i].cells[6].innerHTML = data['Countries'][i-1]['NewDeaths'];
+         tabval.rows[i].cells[6].style.background = "#7a4a91";
+       }
+      }
+    );
+  }
+</script>
+</body>
+</html>
