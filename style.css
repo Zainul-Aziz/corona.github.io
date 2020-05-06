@@ -81,6 +81,7 @@ nav a:hover
 #mybtn:hover
 {
     background-color: black;
+    text-decoration: none;
 }
 #footer_style
 {
